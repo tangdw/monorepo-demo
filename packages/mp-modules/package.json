@@ -21,7 +21,7 @@
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
     "@umijs/test": "^3.0.5",
-    "tsconfig": "*",
+    "config": "*",
     "father-build": "^1.17.2",
     "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
