@@ -5,6 +5,20 @@ node_modules
 .pnp
 .pnp.js
 
+# ide
+/.vscode
+/.idea
+
+# production
+es
+/docs-dist
+
+# umi
+.umi
+.umi-production
+.umi-test
+.env.local
+
 # testing
 coverage
 

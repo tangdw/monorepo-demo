@@ -14,7 +14,7 @@ import { Button } from 'mp-modules';
 
 export default () => (
   <>
-    <Button title="Docs" />
+    <Button title="1212" />
   </>
 );
 ```

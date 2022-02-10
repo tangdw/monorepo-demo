@@ -10,17 +10,24 @@
     "build": "turbo run build",
     "start": "turbo run start --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "clean": "rimraf node_modules & lerna clean -y",
+    "docs:start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "lerna publish --pre-dist-tag next",
     "release:next": "yarn release --no-git-tag-version --no-changelog",
     "release:graduate": "yarn release --conventional-graduate"
   },
   "devDependencies": {
+    "@umijs/fabric": "^2.8.1",
+    "dumi": "^1.1.0",
+    "gh-pages": "^3.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
-    "turbo": "latest"
+    "turbo": "^1.1.2"
   },
   "engines": {
     "npm": ">=7.0.0",

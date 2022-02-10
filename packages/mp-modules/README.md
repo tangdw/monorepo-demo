@@ -5,12 +5,6 @@
 ```bash
 $ yarn
 
-# 开发并启动文档 demo 预览
-$ yarn start
-
-# 构建【文档站点】
-$ yarn docs:build
-
 # 运行测试
 $ yarn test
 
